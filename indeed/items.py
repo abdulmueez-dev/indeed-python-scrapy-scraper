@@ -1,12 +1,18 @@
-# Define here the models for your scraped items
-#
-# See documentation in:
-# https://docs.scrapy.org/en/latest/topics/items.html
-
+# items.py
 import scrapy
 
 
 class IndeedItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+  position = scrapy.Field()
+  jobkey = scrapy.Field()
+  jobTitle = scrapy.Field()
+  company = scrapy.Field()
+  # jobDescription = scrapy.Field()
+  salary = scrapy.Field()
+  benefits = scrapy.Field()
+  location = scrapy.Field()
+  jobType = scrapy.Field()
+
+
+# scrapy crawl indeed_jobs -o output.json
+
